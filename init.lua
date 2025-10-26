@@ -171,8 +171,6 @@ vim.o.tabstop = 4
 vim.o.shiftwidth = 0
 vim.o.expandtab = true
 
-vim.o.verbose = 1
-
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
 
