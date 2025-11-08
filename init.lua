@@ -82,7 +82,7 @@ vim.o.shiftwidth = 4
 vim.o.softtabstop = -1
 vim.o.expandtab = true
 
-vim.o.foldcolumn = '4'
+vim.o.foldmethod = 'indent'
 
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
@@ -160,6 +160,14 @@ rtp:prepend(lazypath)
 require('lazy').setup({
   -- NOTE: Plugins can be added with a link (or for a github repo: 'owner/repo' link).
   'NMAC427/guess-indent.nvim', -- Detect tabstop and shiftwidth automatically
+  {
+    'windwp/nvim-ts-autotag',
+    opts = {
+      enable_close = true, -- Auto close tags
+      enable_rename = true, -- Auto rename pairs of tags
+      enable_close_on_slash = false, -- Auto close on trailing </
+    },
+  },
 
   -- NOTE: Plugins can also be added by using a table,
   -- with the first argument being the link and the following
