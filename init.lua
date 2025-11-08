@@ -12,13 +12,10 @@ vim.g.have_nerd_font = false
 -- NOTE: You can change these options as you wish!
 --  For more options, you can see `:help option-list`
 
--- Make line numbers default
 vim.o.number = true
--- You can also add relative line numbers, to help with jumping.
---  Experiment for yourself to see if you like it!
--- vim.o.relativenumber = true
+vim.o.relativenumber = true
 
--- Enable mouse mode, can be useful for resizing splits for example!
+-- Disable mouse support
 vim.o.mouse = ''
 
 -- Don't show the mode, since it's already in the status line
@@ -81,8 +78,7 @@ vim.o.scrolloff = 10
 vim.o.confirm = true
 
 -- Tab
-vim.o.tabstop = 4
-vim.o.shiftwidth = 0
+vim.o.shiftwidth = 4
 vim.o.softtabstop = -1
 vim.o.expandtab = true
 
